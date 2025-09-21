@@ -32,53 +32,35 @@ env/
 .ipynb_checkpoints
 *.ipynb_checkpoints
 
-# IDE - Visual Studio
+# IDE
 .vs/
 .vscode/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-
-# IDE - PyCharm
 .idea/
 *.iml
 *.iws
+*.swp
+*.swo
+*~
 
-# Data files (too large for GitHub)
+# Data files (exclude all data files)
 *.xlsx
 *.csv
 *.h5
 *.hdf5
 *.pkl
 *.joblib
-data/*.xlsx
-data/*.csv
-data/*.h5
-!data/README.md
-!data/example_data.csv  # Allow example data file if you want
-
-# Model files
-models/*.h5
-models/*.hdf5
-models/*.pkl
-models/*.joblib
-results/models/*.h5
-results/models/*.pkl
-results/models/*.joblib
-!results/models/.gitkeep
-
-# Results (keep figures but not raw data)
-results/metrics/*.csv
-results/metrics/*.json
-results/*.xlsx
-results/*.csv
+*.json
+*.npz
+*.npy
 
 # Logs
 *.log
 logs/
 tensorboard_logs/
-*.tfevents.*
 
 # Testing
 .coverage
@@ -86,21 +68,12 @@ htmlcov/
 .pytest_cache/
 .tox/
 coverage.xml
-*.cover
-
-# Documentation builds
-docs/_build/
-docs/_static/
-docs/_templates/
 
 # Temporary files
 *.tmp
 *.temp
 *.bak
 ~$*
-*.swp
-*.swo
-*~
 
 # Operating System Files
 Thumbs.db
@@ -112,40 +85,11 @@ Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# Python specific
-*.pyc
-*.pyo
-*.pyd
-.Python
-pip-log.txt
-pip-delete-this-directory.txt
-
 # Environments
-.env
-.venv
-env/
-venv/
-ENV/
 env.bak/
 venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
 
 # mypy
 .mypy_cache/
 .dmypy.json
 dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
